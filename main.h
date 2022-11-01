@@ -3,11 +3,8 @@
 
 #include <unistd.h>
 #include <stdarg.h>
-
-/**
- * #include <stdlib.h>
- * #include <limits.h>
- */
+#include <stdlib.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 
