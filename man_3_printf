@@ -13,7 +13,7 @@
 .Sh DESCRIPTION
 The
 .Nm
-function emulates that of <print>f in the C <stdio.h> library.
+function emulates that of <printf> in the C <stdio.h> library.
 .Pp
 The
 .Nm
@@ -21,26 +21,26 @@ function writes values to
 .Ar stdout
 according to a
 .Ar format
-string that defines how arguments wil be converted for output. These arguments
-will be described further down in this manual.
+string that defines which arguments wil be evaluated. These arguments
+will be described further down below.
 .Pp
 .Sh Format of the format string
 .Pp
 The
 .Ar format
-string is a character string enclosed in double quotes. This format string
+string is a character string enclosed by double quotes. This format string
 is composed of characters and conversion specifiers. Conversion specifiers are
-preceded by the '%' character. The conversion specifire defines how arguments
-will be converted for output. Any conversion specifiers may be preceded by
+preceded by the '%' character. The conversion specifier defines how arguments
+will be converted for output. Any conversion specifiers can be preceded by
 characters, separated by characters(if there is more than one conversion
 specifier), or followed by characters. Any characters will also be printed
 to the standard output.
 .Pp
 The arguments that are passed into the function must correspond with the
-conversion specifiers. Each argument will be separated by a comma. If these
-arguments and conversion specdifiers do not correspond,
+conversion specifiers type. Each argument will be separated by a comma. If these
+arguments and conversion specifiers do not correspond,
 .Nm
-will misbehave.
+could misbehave.
 .Pp
 .Sh Conversion specifiers
 .Pp
@@ -64,7 +64,7 @@ function successfuly executes, the function returns the number
 of characters printed.
 If an output error is encountered, a negative value is returned.
 .Sh NOTES
-We've done our best not to plagiarize the PRINTF(3) Linux Programmer's Manual.
-There are inherently similar streams of thought and use of vocabulary and
+We have been diligent not to plagiarize the PRINTF(3) Linux Programmer's Manual.
+With similar subject matter and some similarities in streams of thought and use of vocabulary and
 structure that come with creating a function emulator. All credit goes to the
 Linux Programmer's Manual.
