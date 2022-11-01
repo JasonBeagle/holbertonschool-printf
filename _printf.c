@@ -1,4 +1,4 @@
-#include "test_header.h"
+#include "main.h"
 
 /**
  * get_spec - returns pointer to function specifier.
@@ -11,13 +11,12 @@ int (*get_spec(const char *format))(va_list)
 {
 	unsigned int i;
 	format_spec print_spec[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"d", print_di},
-		{"i", print_di},
+		{"c", spec_c},
+		{"s", spec_s},
+		{"d", spec_id},
+		{"i", spec_id},
 		{NULL, NULL}
 	};
-	
 	for (i = 0; print_spec[i].spec != NULL; i++)
 	{
 		if (*(print_spec[i].spec) == *format)

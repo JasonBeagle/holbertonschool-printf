@@ -33,7 +33,7 @@ int spec_c(va_list c)
 
 /**
 *spec_s - prints str to stdout
-@s: str to print
+*@s: str to print
 *Return: len of str
 */
 int spec_s(va_list s)
@@ -54,7 +54,7 @@ int spec_s(va_list s)
 
 /**
 *spec_id - prints int/dec to stdout
-@id: int/dec to print out
+*@id: int/dec to print out
 *Return: length of int/dec
 */
 int spec_id(va_list id)
@@ -86,7 +86,7 @@ int spec_id(va_list id)
 
 	while (divider >= 1)
 	{
-		_putchar((val / divider + '0');
+		_putchar((v / divider + '0'));
 		v = v % divider;
 		divider /= 10;
 		len++;
